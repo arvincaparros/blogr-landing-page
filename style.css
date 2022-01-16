@@ -501,11 +501,12 @@ footer nav .connect li a:hover {
   /* Header Mobile Style */
   header {
     height: 80vh;
+    width: 100%;
+    margin-right: 0;
     background: url(images/bg-pattern-intro-mobile.svg), linear-gradient(to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-    background-size: 210%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-x: -410px;
     border-bottom-left-radius: 80px;
   }
   header nav .row {
@@ -524,24 +525,24 @@ footer nav .connect li a:hover {
   /* hamburger button */
   header nav .row .hamburger-button {
     display: block;
+    width: 25px;
   }
 
   /* Intro */
   header .intro {
     margin-top: 40px;
+    padding: 0 25px;
   }
 
   header .intro h1 {
     font-weight: 500;
     font-size: 35px;
-    padding: 0 25px;
     line-height: 50px;
   }
 
   header .intro p {
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 30px;
-    padding: 0 25px;
   }
 
   header .intro .intro-button {
@@ -552,13 +553,11 @@ footer nav .connect li a:hover {
 
   header .intro .intro-button a:first-of-type {
     width: 150px;
-    padding: 15px 20px;
     border-radius: 30px;
   }
 
   header .intro .intro-button a:last-of-type {
     width: 150px;
-    padding: 15px 20px;
     border-radius: 30px;
   }
   /* --------------->Header Mobile Style End<--------------- */
