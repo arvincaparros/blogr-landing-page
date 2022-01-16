@@ -3,6 +3,9 @@ const arrows = document.querySelectorAll('.arrow');
 arrows.forEach((arrow, i) => {
   arrow.addEventListener('click', function() {
     toggleMenu(i);
+    setTimeout(function() {
+      toggleMenu(i).remove();
+    }, 5000)
   });
 })
 

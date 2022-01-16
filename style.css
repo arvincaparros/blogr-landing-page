@@ -393,6 +393,10 @@ footer nav .product li a {
   color: hsl(240, 2%, 79%);
 }
 
+footer nav .product li a:hover {
+  color: hsl(355, 100%, 74%);
+}
+
 /* Company Links */
 footer nav .company {
   list-style: none;
@@ -415,6 +419,10 @@ footer nav .company li a {
   color: hsl(240, 2%, 79%);
 }
 
+footer nav .company li a:hover {
+  color: hsl(355, 100%, 74%);
+}
+
 /* Connect Links */
 footer nav .connect {
   list-style: none;
@@ -435,6 +443,10 @@ footer nav .connect li a {
   font-size: 15px;
   line-height: 24px;
   color: hsl(240, 2%, 79%);
+}
+
+footer nav .connect li a:hover {
+  color: hsl(355, 100%, 74%);
 }
 
 /* -------------->End of Footer<-------------- */
