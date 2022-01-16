@@ -1,0 +1,766 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -------------->Header Style Start<--------------- */
+header {
+  height: 80vh;
+  background: url(images/bg-pattern-intro-desktop.svg), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-size: 210%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: -410px;
+  border-bottom-left-radius: 80px;
+}
+
+/* -------------->Nav bar<-------------- */
+header nav {
+  padding: 40px 0;
+}
+
+header nav .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header nav .row .col-logo {
+  width: 10%;
+}
+
+header nav .row .col-menus {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+/* Nav Links */
+header nav .row .col-menus .lists-element {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+header nav .row .col-menus .lists-element .product-list {
+  color: hsl(0, 0%, 100%);
+}
+
+header nav .row .col-menus .lists-element li a {
+  font-family: 'Overpass', sans-serif;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+}
+
+header nav .row .col-menus .lists-element li .list-item {
+  display: none;
+  padding: 8px;
+  margin-left: 8px;
+  background-color: hsl(0, 0%, 100%);
+  list-style: none;
+  border-radius: 2px;
+}
+
+header nav .row .col-menus .lists-element li .drop-down {
+  display: block;
+  position: absolute;
+}
+
+header nav .row .col-menus .lists-element li .list-item li {
+  padding: 5px 10px;
+}
+
+header nav .row .col-menus .lists-element li .list-item li a {
+  color: hsl(356, 100%, 66%);
+}
+
+header nav .row .col-menus .lists-element li .list-item li a:hover {
+  color: hsl(355, 100%, 74%);
+}
+
+/* Nav Login / Sign up */
+header nav .row .col-menus .login-signup a {
+  font-family: 'Overpass', sans-serif;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+header nav .row .col-menus .login-signup a:last-of-type {
+  margin-right: 0px;
+  padding: 10px 20px;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(356, 100%, 66%);
+  border-radius: 20px;
+}
+
+header nav .row .col-menus .login-signup a:last-of-type:hover {
+  background-color: hsl(355, 100%, 74%);
+  color: hsl(0, 0%, 100%);
+  transition: 0.5s;
+}
+
+/* hamburger button */
+header nav .row .hamburger-button {
+  display: none;
+}
+
+/* Intro */
+header .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+}
+
+header .intro h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+header .intro p {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  margin-top: 20px;
+}
+
+header .intro .intro-button {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+header .intro .intro-button a:first-of-type {
+  display: block;
+  width: 200px;
+  text-decoration: none;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(356, 100%, 66%);
+  padding: 15px 20px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 30px;
+}
+
+header .intro .intro-button a:last-of-type {
+  display: block;
+  width: 200px;
+  text-decoration: none;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+  padding: 15px 20px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 230px;
+}
+
+header .intro .intro-button a:hover {
+  border: 1px solid hsl(355, 100%, 74%);
+  background-color: hsl(355, 100%, 74%);
+  color: hsl(0, 0%, 100%);
+  transition: 0.5s;
+}
+
+/* -------------->Header Style End<-------------- */
+
+/* -------------->First Section<-------------- */
+.first-section .text-heading  {
+  margin-top: 120px;
+}
+
+.first-section .text-heading h2 {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: hsl(208, 49%, 24%);
+}
+
+.first-section .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-top: -130px;
+}
+
+.first-section .row .img-mobile {
+  display: none;
+}
+
+/* First Section Column 1 */
+.first-section .row .col-1 {
+  margin-left: 80px;
+  width: 40%;
+}
+
+.first-section .row .col-1 div {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: hsl(207, 13%, 34%);
+}
+
+.first-section .row .col-1 div:last-of-type {
+  margin-top: 50px;
+}
+
+.first-section .row .col-1 p {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: hsl(207, 13%, 34%);
+  margin-top: 30px;
+}
+/* First Section Column 2 */
+.first-section .row .col-2 {
+  width: 60%;
+  margin-right: -180px;
+}
+
+.first-section .row .col-2 img {
+  height: 800px;
+  width: 900px;
+}
+
+/* -------------->End of First Section<-------------- */
+
+/* -------------->Second Section<-------------- */
+.second-section {
+  margin-top: 30px;
+}
+
+.second-section .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  height: 400px;
+  
+  background-image: url(images/bg-pattern-circles.svg);
+  background-color: hsl(237, 17%, 21%);
+  background-repeat: no-repeat;
+  background-position-x: -190px;
+  background-position-y: -400px;
+  background-size: 900px;
+  border-bottom-left-radius: 80px;
+  border-top-right-radius: 80px;
+}
+/* Section Column 1 */
+.second-section .row .col-1 {
+  margin-left: 40px;
+  width: 50%;
+}
+
+.second-section .row .col-1 img {
+  margin-top: 40px;
+}
+
+/* Section Column 2 */
+.second-section .row .col-2 {
+  margin-right: 80px;
+  width: 50%;
+}
+
+.second-section .row .col-2 h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: hsl(0, 0%, 100%);
+}
+
+.second-section .row .col-2 p {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: hsl(0, 0%, 100%);
+  margin-top: 30px;
+}
+/* -------------->End of Second Section<-------------- */
+
+
+/* -------------->Third Section<-------------- */
+.third-section {
+  margin-top: 100px;
+}
+
+.third-section .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Third Section Column 1 */
+.third-section .row .col-1 {
+  width: 60%;
+  margin-left: -250px;
+}
+
+.third-section .row .col-1 .mobile-image {
+  display: none;
+}
+
+.third-section .row .col-1 .desktop-image {
+  width: 870px;
+}
+
+/* Third Section Column 2 */
+.third-section .row .col-2 {
+  margin-right: 80px;
+  width: 40%;
+}
+
+.third-section .row .col-2 div {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: hsl(207, 13%, 34%);
+}
+
+.third-section .row .col-2 div:last-of-type {
+  margin-top: 50px;
+}
+
+.third-section .row .col-2 p {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: hsl(207, 13%, 34%);
+  margin-top: 30px;
+}
+
+/* -------------->End of Third Section<-------------- */
+
+/* -------------->Footer<-------------- */
+footer {
+  background-color:  hsl(240, 10%, 16%);
+  border-top-right-radius: 80px;
+  margin-top: 100px;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1020px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* Product Links */
+footer nav .product {
+  list-style: none;
+}
+
+footer nav .product p {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: hsl(240, 2%, 79%);
+  margin-bottom: 18px;
+}
+
+footer nav .product li a {
+  text-decoration: none;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  color: hsl(240, 2%, 79%);
+}
+
+/* Company Links */
+footer nav .company {
+  list-style: none;
+}
+
+footer nav .company p {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: hsl(240, 2%, 79%);
+  margin-bottom: 18px;
+}
+
+footer nav .company li a {
+  text-decoration: none;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  color: hsl(240, 2%, 79%);
+}
+
+/* Connect Links */
+footer nav .connect {
+  list-style: none;
+}
+
+footer nav .connect p {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: hsl(240, 2%, 79%);
+  margin-bottom: 18px;
+}
+
+footer nav .connect li a {
+  text-decoration: none;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  color: hsl(240, 2%, 79%);
+}
+
+/* -------------->End of Footer<-------------- */
+
+/* Attribution */
+
+.attribution {
+  background-color: hsl(237, 17%, 21%);
+  color: hsl(0, 0%, 60%); 
+  font-size: 11px; 
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(240, 2%, 79%);
+  font-size: 14px;
+}
+
+
+
+/* =================Media Querie================= */
+
+/* -------------->Mobile<-------------- */
+@media screen and (max-width: 414px) {
+
+  /* --------------->Header<--------------- */
+  /* Header Mobile Style */
+  header {
+    height: 80vh;
+    background: url(images/bg-pattern-intro-mobile.svg), linear-gradient(to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-size: 210%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: -410px;
+    border-bottom-left-radius: 80px;
+  }
+  header nav .row {
+    margin: 0 25px;
+  }
+
+  header nav .row .col-menus {
+    display: none;
+  }
+
+  /* hamburger button */
+  header nav .row .hamburger-button {
+    display: block;
+  }
+
+  /* Intro */
+  header .intro {
+    margin-top: 100px;
+  }
+
+  header .intro h1 {
+    font-weight: 500;
+    font-size: 35px;
+    padding: 0 25px;
+    line-height: 50px;
+  }
+
+  header .intro p {
+    font-size: 22px;
+    margin-top: 30px;
+    padding: 0 25px;
+  }
+
+  header .intro .intro-button {
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+  }
+
+  header .intro .intro-button a:first-of-type {
+    width: 150px;
+    padding: 15px 20px;
+    border-radius: 30px;
+  }
+
+  header .intro .intro-button a:last-of-type {
+    width: 150px;
+    padding: 15px 20px;
+    border-radius: 30px;
+  }
+  /* --------------->Header Mobile Style End<--------------- */
+
+  /* --------------->First Section Mobile Style<--------------- */
+  .first-section .text-heading  {
+    margin-top: 100px;
+  }
+  
+  .first-section .text-heading h2 {
+    font-weight: 500;
+    font-size: 30px;
+    padding: 0 20px;
+  }
+  
+  .first-section .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    padding: 0 25px;
+  }
+
+  .first-section .row .img-mobile {
+    display: block;
+  }
+  
+  /* First Section Column 1 */
+  .first-section .row .col-1 {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .first-section .row .col-1 div {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .first-section .row .col-1 div:last-of-type {
+    margin-top: 50px;
+  }
+  
+  .first-section .row .col-1 p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* First Section Column 2 */
+  .first-section .row .col-2 {
+    display: none;
+  }
+  
+  /* --------------->First Section Mobile Style End<--------------- */
+
+  /* --------------->Second Section Mobile Style<--------------- */
+  .second-section {
+    margin-top: 340px;
+  }
+  
+  .second-section .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    height: 620px;
+    background-image: url(images/bg-pattern-circles.svg);
+    background-color: hsl(237, 17%, 21%);
+    background-repeat: no-repeat;
+    background-position-x: -130px;
+    background-position-y: -280px;
+    background-size: 680px;
+    border-bottom-left-radius: 80px;
+    border-top-right-radius: 80px;
+    padding: 0 25px;
+  }
+  /* Section Column 1 */
+  .second-section .row .col-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: -420px;
+    width: 100%;
+  }
+  
+  .second-section .row .col-1 img {
+    width: 420px;
+    padding: 0 20px;
+  }
+  
+  /* Section Column 2 */
+  .second-section .row .col-2 {
+    margin-top: 50px;
+    margin-right: 0;
+    width: 100%;
+  }
+  
+  .second-section .row .col-2 h3 {
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    line-height: 45px;
+  }
+  
+  .second-section .row .col-2 p {
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+  }
+  /* --------------->Second Section Mobile Style End<--------------- */
+
+  /* --------------->Third Section Mobile Style<--------------- */
+  .third-section .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0 25px;
+  }
+  
+  /* Third Section Column 1 */
+  .third-section .row .col-1 {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  
+  .third-section .row .col-1 .mobile-image {
+    display: block;
+    width: 500px;
+    padding: 0 10px;
+  }
+  
+  .third-section .row .col-1 .desktop-image {
+    display: none;
+  }
+  
+  /* Third Section Column 2 */
+  .third-section .row .col-2 {
+    margin-right: 0;
+    width: 100%;
+  }
+  
+  .third-section .row .col-2 div {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .third-section .row .col-2 p {
+    font-size: 18px;
+    text-align: center;
+  }
+  /* --------------->Third Section Mobile Style End<--------------- */
+
+
+  /* --------------->Footer Section Mobile Style<--------------- */
+  /* footer {
+    background-color:  hsl(240, 10%, 16%);
+    border-top-right-radius: 80px;
+    margin-top: 100px;
+  } */
+  
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Product Links */
+  footer nav .product {
+    list-style: none;
+    margin-top: 50px;
+  }
+  
+  footer nav .product p {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  footer nav .product li {
+    text-align: center;
+  }
+  
+  footer nav .product li a {
+    font-size: 16px;
+  }
+  
+  /* Company Links */
+  footer nav .company {
+    margin-top: 50px;
+  }
+
+  footer nav .company li {
+    text-align: center;
+  }
+  
+  footer nav .company p {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  footer nav .company li a {
+    font-size: 16px;
+  }
+  
+  /* Connect Links */
+  footer nav .connect {
+    list-style: none;
+    margin-top: 50px;
+  }
+  
+  footer nav .connect p {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  footer nav .connect li {
+    text-align: center;
+  }
+  
+  footer nav .connect li a {
+    font-size: 16px;
+  }
+  /* --------------->Footer Section Mobile Style End<--------------- */
+  
+  /* Attribution */
+
+  .attribution {
+    padding: 10px 25px;
+  }
+
+  .attribution a {
+    font-size: 14px;
+  }
+} 
