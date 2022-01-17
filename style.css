@@ -327,15 +327,6 @@ header .intro .intro-button a:hover {
 /* -------------->Second Section<-------------- */
 .second-section {
   margin-top: 30px;
-}
-
-.second-section .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
-  height: 400px;
-  
   background-image: url(images/bg-pattern-circles.svg);
   background-color: hsl(237, 17%, 21%);
   background-repeat: no-repeat;
@@ -345,6 +336,15 @@ header .intro .intro-button a:hover {
   border-bottom-left-radius: 80px;
   border-top-right-radius: 80px;
 }
+
+.second-section .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  height: 400px;
+}
+
 /* Section Column 1 */
 .second-section .row .col-1 {
   margin-left: 40px;
@@ -557,9 +557,8 @@ footer nav .connect li a:hover {
 
   /* Header Mobile Style */
   header {
-    height: 80vh;
-    width: 100%;
-    margin-right: 0;
+    overflow-x: hidden;
+    height: 100vh;
     background: url(images/bg-pattern-intro-mobile.svg), linear-gradient(to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     background-size: cover;
     background-repeat: no-repeat;
@@ -680,6 +679,14 @@ footer nav .connect li a:hover {
   /* --------------->Second Section Mobile Style<--------------- */
   .second-section {
     margin-top: 340px;
+    background-image: url(images/bg-pattern-circles.svg);
+    background-color: hsl(237, 17%, 21%);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -280px;
+    background-size: cover;
+    border-bottom-left-radius: 80px;
+    border-top-right-radius: 80px;
   }
   
   .second-section .row {
@@ -689,14 +696,6 @@ footer nav .connect li a:hover {
     align-items: center;
     gap: 0px;
     height: 620px;
-    background-image: url(images/bg-pattern-circles.svg);
-    background-color: hsl(237, 17%, 21%);
-    background-repeat: no-repeat;
-    background-position-x: -130px;
-    background-position-y: -280px;
-    background-size: 680px;
-    border-bottom-left-radius: 80px;
-    border-top-right-radius: 80px;
     padding: 0 25px;
   }
   /* Section Column 1 */
