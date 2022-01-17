@@ -21,6 +21,7 @@ header {
 
 /* Mobile Nav Bar */
 .mobile-navbar {
+  overflow: scroll;
   width: 325px;
   height: 100vh;
   padding: 20px;
@@ -89,6 +90,39 @@ header {
 
 .mobile-navbar .mobile-menu ul li a:hover {
   color: hsl(355, 100%, 74%);
+}
+
+/* Nav Login / Sign up */
+.mobile-navbar .login-signup {
+  margin-top: 50px;
+}
+
+.mobile-navbar .login-signup a {
+  display: block;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.mobile-navbar .login-signup a:hover {
+  color: hsl(355, 100%, 74%);
+}
+
+.mobile-navbar .login-signup a:last-of-type {
+  margin-top: 10px;
+  background-color: hsl(356, 100%, 66%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+}
+
+.mobile-navbar .login-signup a:last-of-type:hover {
+  background-color: hsl(355, 100%, 74%);
+  color: hsl(0, 0%, 100%);
+  transition: 0.5s;
 }
 /* End */
 
