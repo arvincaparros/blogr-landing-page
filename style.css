@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 /* -------------->Header Style Start<--------------- */
@@ -24,7 +24,7 @@ header {
   width: 325px;
   height: 100vh;
   padding: 20px;
-  background-color: hsl(13, 100%, 72%);
+  background-color: hsl(237, 23%, 32%);
   position: fixed;
   right: -325px;
   top: 0;
@@ -32,12 +32,63 @@ header {
 }
 
 .mobile-navbar .close-button {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .mobile-navbar .close-button img {
   width: 25px;
   height: 25px;
+}
+
+.mobile-navbar .mobile-menu ul {
+  display: none;
+  list-style: none;
+  margin-bottom: 4px;
+  padding: 10px 0;
+  text-align: center;
+  background: hsl(237, 17%, 21%);
+}
+
+.mobile-navbar .mobile-menu .show-ul {
+  display: block;
+  transition: 0.5s;
+}
+
+.mobile-navbar .mobile-menu p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+  padding: 10px 5px;
+  background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+}
+
+.mobile-navbar .mobile-menu p a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.mobile-navbar .mobile-menu ul p a:hover {
+  color: hsl(355, 100%, 74%);
+}
+
+.mobile-navbar .mobile-menu ul li {
+  margin-left: 10px;
+  padding: 2px 0;
+}
+
+.mobile-navbar .mobile-menu ul li a {
+  font-size: 16px;
+  font-family: 'Overpass', sans-serif;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.mobile-navbar .mobile-menu ul li a:hover {
+  color: hsl(355, 100%, 74%);
 }
 /* End */
 
@@ -68,7 +119,7 @@ header nav .row .col-menus {
 /* Nav Links */
 header nav .row .col-menus .lists-element {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   list-style: none;
 }
 
@@ -85,9 +136,10 @@ header nav .row .col-menus .lists-element li a {
 
 header nav .row .col-menus .lists-element li .list-item {
   display: none;
+  width: 130px;
   padding: 8px;
-  margin-left: 8px;
-  background-color: hsl(0, 0%, 100%);
+  margin-left: 20px;
+  background-color: hsl(237, 17%, 21%);
   list-style: none;
   border-radius: 2px;
 }
@@ -102,7 +154,7 @@ header nav .row .col-menus .lists-element li .list-item li {
 }
 
 header nav .row .col-menus .lists-element li .list-item li a {
-  color: hsl(356, 100%, 66%);
+  color: hsl(0, 0%, 100%);
 }
 
 header nav .row .col-menus .lists-element li .list-item li a:hover {
@@ -116,7 +168,7 @@ header nav .row .col-menus .login-signup a {
   color: hsl(0, 0%, 100%);
   font-size: 16px;
   font-weight: 700;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 header nav .row .col-menus .login-signup a:last-of-type {
