@@ -550,6 +550,10 @@ footer nav .connect li a:hover {
 @media screen and (max-width: 414px) {
 
   /* --------------->Header<--------------- */
+  body {
+    overflow-x: hidden;
+  }
+
   /* Header Mobile Style */
   header {
     height: 80vh;
@@ -663,6 +667,10 @@ footer nav .connect li a:hover {
 
   /* First Section Column 2 */
   .first-section .row .col-2 {
+    display: none;
+  }
+
+  .first-section .row .col-2 img {
     display: none;
   }
   
