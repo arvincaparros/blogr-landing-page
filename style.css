@@ -5,7 +5,6 @@
 }
 
 body {
-  overflow-x: hidden;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -644,6 +643,10 @@ footer nav .connect li a:hover {
     justify-content: center;
     align-items: center;
   }
+
+  .first-section .row .img-mobile img {
+    width: 100vw;
+  }
   
   /* First Section Column 1 */
   .first-section .row .col-1 {
@@ -709,8 +712,7 @@ footer nav .connect li a:hover {
   }
   
   .second-section .row .col-1 img {
-    width: 420px;
-    padding: 0 20px;
+    width: 100vw;
   }
   
   /* Section Column 2 */
@@ -746,7 +748,6 @@ footer nav .connect li a:hover {
   
   /* Third Section Column 1 */
   .third-section .row .col-1 {
-    max-width: 500px;
     display: flex;
     justify-content: center;
     margin-left: 0px;
@@ -754,8 +755,7 @@ footer nav .connect li a:hover {
   
   .third-section .row .col-1 .mobile-image {
     display: block;
-    width: 500px;
-    padding: 0 10px;
+    width: 100vw;
   }
   
   .third-section .row .col-1 .desktop-image {
