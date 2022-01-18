@@ -5,6 +5,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -62,6 +63,11 @@ header {
   margin-bottom: 4px;
   padding: 10px 5px;
   background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+}
+
+.mobile-navbar .mobile-menu p:hover {
+  opacity: 0.8;
+  transition: 0.5s;
 }
 
 .mobile-navbar .mobile-menu p a {
@@ -580,6 +586,311 @@ footer nav .connect li a:hover {
 
 /* =================Media Querie================= */
 
+/* -------------->Tablet<-------------- */
+@media screen and (max-width: 812px) {
+   /* Header Tablet Style */
+  header {
+    height: 90vh;
+    background: url(images/bg-pattern-intro-mobile.svg), linear-gradient(to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom-left-radius: 80px;
+  }
+  header nav .row {
+    padding: 0 25px;
+  }
+
+  header nav .row .col-logo {
+    width: 10%;
+    padding-left: 0;
+  }
+
+  header nav .row .col-menus {
+    display: none;
+  }
+
+  /* hamburger button */
+  header nav .row .hamburger-button {
+    display: block;
+    width: 25px;
+  }
+
+  /* Intro */
+  header .intro {
+    margin-top: 70px;
+    padding: 0 25px;
+  }
+
+  header .intro h1 {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  header .intro p {
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+  header .intro .intro-button {
+    display: flex;
+    margin-top: 40px;
+    gap: 20px;
+  }
+
+  header .intro .intro-button a:first-of-type {
+    width: 160px;
+    border-radius: 30px;
+  }
+
+  header .intro .intro-button a:last-of-type {
+    width: 160px;
+    border-radius: 30px;
+  }
+  /* --------------->Header Tablet Style End<--------------- */
+
+  /* --------------->First Tablet Mobile Style<--------------- */
+  .first-section .text-heading  {
+    margin-top: 100px;
+  }
+  
+  .first-section .text-heading h2 {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  
+  .first-section .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    padding: 0 25px;
+  }
+
+  .first-section .row .img-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first-section .row .img-mobile img {
+    width: 100vw;
+  }
+  
+  /* First Section Column 1 */
+  .first-section .row .col-1 {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .first-section .row .col-1 div {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .first-section .row .col-1 div:last-of-type {
+    margin-top: 50px;
+  }
+  
+  .first-section .row .col-1 p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* First Section Column 2 */
+  .first-section .row .col-2 {
+    display: none;
+  }
+
+  .first-section .row .col-2 img {
+    display: none;
+  }
+  
+  /* --------------->First Section Tablet Style End<--------------- */
+
+  /* --------------->Second Section Tablet Style<--------------- */
+  .second-section {
+    margin-top: 500px;
+    background-image: url(images/bg-pattern-circles.svg);
+    background-color: hsl(237, 17%, 21%);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -280px;
+    background-size: cover;
+    border-bottom-left-radius: 80px;
+    border-top-right-radius: 80px;
+  }
+  
+  .second-section .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 800px;
+    padding: 0 25px;
+  }
+  /* Section Column 1 */
+  .second-section .row .col-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: -570px;
+    width: 100%;
+  }
+  
+  .second-section .row .col-1 img {
+    width: 100vw;
+  }
+  
+  /* Section Column 2 */
+  .second-section .row .col-2 {
+    margin-top: 40px;
+    margin-right: 0;
+    width: 100%;
+  }
+  
+  .second-section .row .col-2 h3 {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    line-height: 45px;
+  }
+  
+  .second-section .row .col-2 p {
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+  }
+  /* --------------->Second Section Tablet Style End<--------------- */
+
+  /* --------------->Third Section Mobile Style<--------------- */
+  .third-section {
+    margin-top: 100px;
+  }
+  
+  .third-section .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0 25px;
+  }
+  
+  /* Third Section Column 1 */
+  .third-section .row .col-1 {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  
+  .third-section .row .col-1 .mobile-image {
+    display: block;
+    width: 100vw;
+  }
+  
+  .third-section .row .col-1 .desktop-image {
+    display: none;
+  }
+  
+  /* Third Section Column 2 */
+  .third-section .row .col-2 {
+    margin-right: 0;
+    width: 100%;
+  }
+  
+  .third-section .row .col-2 div {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .third-section .row .col-2 p {
+    font-size: 18px;
+    text-align: center;
+  }
+  /* --------------->Third Section Mobile Style End<--------------- */
+
+  /* --------------->Footer Section Mobile Style<--------------- */
+  
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Product Links */
+  footer nav .product {
+    list-style: none;
+    margin-top: 50px;
+    padding-left: 0;
+  }
+  
+  footer nav .product p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  footer nav .product li {
+    text-align: center;
+  }
+  
+  footer nav .product li a {
+    font-size: 16px;
+  }
+  
+  /* Company Links */
+  footer nav .company {
+    list-style: none;
+    margin-top: 50px;
+    padding-left: 0;
+  }
+
+  footer nav .company li {
+    text-align: center;
+  }
+  
+  footer nav .company p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  footer nav .company li a {
+    font-size: 16px;
+  }
+  
+  /* Connect Links */
+  footer nav .connect {
+    list-style: none;
+    margin-top: 50px;
+    padding-left: 0;
+  }
+  
+  footer nav .connect p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  footer nav .connect li {
+    text-align: center;
+  }
+  
+  footer nav .connect li a {
+    font-size: 16px;
+  }
+  /* --------------->Footer Section Mobile Style End<--------------- */
+
+}
+
+
 /* -------------->Mobile<-------------- */
 @media screen and (max-width: 414px) {
 
@@ -590,7 +901,6 @@ footer nav .connect li a:hover {
 
   /* Header Mobile Style */
   header {
-    overflow-x: hidden;
     height: 100vh;
     background: url(images/bg-pattern-intro-mobile.svg), linear-gradient(to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     background-size: cover;
@@ -641,12 +951,12 @@ footer nav .connect li a:hover {
   }
 
   header .intro .intro-button a:first-of-type {
-    width: 150px;
+    width: 145px;
     border-radius: 30px;
   }
 
   header .intro .intro-button a:last-of-type {
-    width: 150px;
+    width: 145px;
     border-radius: 30px;
   }
   /* --------------->Header Mobile Style End<--------------- */
@@ -815,12 +1125,6 @@ footer nav .connect li a:hover {
 
 
   /* --------------->Footer Section Mobile Style<--------------- */
-  /* footer {
-    background-color:  hsl(240, 10%, 16%);
-    border-top-right-radius: 80px;
-    margin-top: 100px;
-  } */
-  
   footer nav {
     display: flex;
     flex-direction: column;
